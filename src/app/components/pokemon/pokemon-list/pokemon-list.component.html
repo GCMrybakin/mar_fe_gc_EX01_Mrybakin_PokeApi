@@ -1,0 +1,38 @@
+<script src="https://cdn.jsdelivr.net/npm/@ng-bootstrap/ng-bootstrap@11.0.1/bundles/ng-bootstrap.js"></script>
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="row m-2">
+        <h1>Pokemon lista</h1>
+        <input type="text" [(ngModel)]="buscarPokemon" (input)="buscarPokemons()" class="form-control" placeholder="Buscar pokemon.">
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4" *ngFor="let pokemon of pokemonsFiltrados">
+            <div class="card mb-3">
+                <img class="card-img-top" [src]="pokemon.image" alt="Imagen del pokemon">
+                <div class="card-body">
+                    <h5 class="card-title">{{ pokemon.name }}</h5>
+                    <button class="btn btn-primary" (click)="abrirPokemonDetallesModal(pokemon)">Ver detalles</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ng-template #PokemonDetailsModal let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Detalles del pokemon</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+                <span aria-hidden="true">&times;</span>
+            </button>
+    </div>
+    <div class="modal-body">
+        <p>Nombre: {{pokemonSeleccionado.name}}</p>
+        <p>Experienca base: {{pokemonSeleccionado.base_experience}}</p>
+        <p>Altura: {{pokemonSeleccionado.height}}</p>
+        <p>Peso: {{pokemonSeleccionado.weight}}</p>
+        <p>ID: {{pokemonSeleccionado.id}}</p>
+    </div>
+</ng-template>
