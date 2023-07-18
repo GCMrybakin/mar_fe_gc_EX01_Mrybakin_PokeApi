@@ -1,27 +1,21 @@
 # EX01MrybakinPokeApi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+Este projecto fue creado usando [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
-## Development server
+## Acceder localmente
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Ejecute `ng serve -o` para que se habra en el navegador el servidor localmente: `http://localhost:4200/`. Los cambios realizados se reflectaran automaticamente.
 
-## Code scaffolding
+Contiene un buscador de pokemons. La lista es de 8 pokemons aleatorios.
+![image](https://github.com/GCMrybakin/mar_fe_gc_EX01_Mrybakin_PokeApi/assets/135844963/8fe64790-1e10-4206-b5ab-92f5c50c747e)
+Funcionalidad del buscador de pokemons
+![image](https://github.com/GCMrybakin/mar_fe_gc_EX01_Mrybakin_PokeApi/assets/135844963/660e29da-0641-4ad5-b09a-a0b865e4d1eb)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Pestaña home
+![image](https://github.com/GCMrybakin/mar_fe_gc_EX01_Mrybakin_PokeApi/assets/135844963/d338e600-ef5c-4ab8-9055-c5e58a6a0a47)
 
-## Build
+# Sobre nosotros
+![image](https://github.com/GCMrybakin/mar_fe_gc_EX01_Mrybakin_PokeApi/assets/135844963/da008a8b-7349-4aec-8141-2ef6d4db47f9)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+# Registrarse
+![image](https://github.com/GCMrybakin/mar_fe_gc_EX01_Mrybakin_PokeApi/assets/135844963/bae80e00-3216-4470-843f-065b91d2d74a)
